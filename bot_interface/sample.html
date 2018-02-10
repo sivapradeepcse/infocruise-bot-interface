@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Infocruise</title>
+		<link rel="stylesheet" type="text/css" href="chat.css">
+		<script src="chat-script.js"></script>
+		</head>
+<body onload="loadChatbox()">
+<div class="chatbox" id="chatbox">
+	<div style="width: 400px; height: 530px; overflow: hidden; margin: auto; padding: 0;">
+		<div style="width: 400px; height: 530px; overflow: hidden; margin: auto; padding: 0; border:0; ">;
+			<iframe src="https://infocruise.herokuapp.com/customer" scrolling="no" frameborder="0" width="400px" height="530px" style="border:0; margin:0; padding: 0;"></iframe>
+		</div>
+	</div>
+	<div id="close-chat" onclick="closeChatbox()">&times;</div>
+	<div id="minim-chat" onclick="minimChatbox()"><span class="minim-button">&minus;</span></div>
+	<div id="maxi-chat" onclick="loadChatbox()"><span class="maxi-button">&plus;</span></div>
+</div>
+</body>
+</html>
