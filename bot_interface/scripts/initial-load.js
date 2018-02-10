@@ -1,1 +1,4 @@
-$( document ).ready(loadChatbox);
+function initial_load()
+{
+	loadChatbox();
+}
