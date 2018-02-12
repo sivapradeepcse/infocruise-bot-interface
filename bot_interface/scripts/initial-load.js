@@ -1,4 +1,7 @@
 function initial_load()
 {
-	loadChatbox();
+	setTimeout( function(){ 
+    loadChatbox();
+  }  , 5000 );
+	
 }
