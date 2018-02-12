@@ -22,7 +22,7 @@ const MessageRouter = require('./messageRouter.js');
 
 // Load and instantiate the API.AI client library
 const ApiAi = require('apiai');
-const apiAiApp = ApiAi(process.env.APIAI_ACCESS_TOKEN);
+const apiAiApp = ApiAi('af8a1a7cf97542629d81c2b56bcf7f5f');
 
 // Instantiate our app
 const customerStore = new CustomerStore();

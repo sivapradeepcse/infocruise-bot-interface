@@ -1,0 +1,3 @@
+[submodule "infocruise"]
+	path = infocruise
+	url = https://git.heroku.com/infocruise.git
