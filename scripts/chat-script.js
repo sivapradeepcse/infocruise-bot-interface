@@ -7,6 +7,12 @@ function minimizechat()
 }
 function maximizechat()
 {
-	document.getElementById("agent").style.display="block";
+	$( "#messenger-img" ).toggle( "bounce", { times: 4 }, "slow" );
+setTimeout( function(){ 
+    document.getElementById("agent").style.display="block";
+
+
 	document.getElementById("messenger-img").style.display="none";
+  }  , 2000 );
+	
 }
