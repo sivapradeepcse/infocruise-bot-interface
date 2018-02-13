@@ -1,7 +1,9 @@
 function initial_load()
 {
+document.getElementById("agent").style.display="none";
+document.getElementById("messenger-img").style.display="none";
 	setTimeout( function(){ 
-    loadChatbox();
-  }  , 5000 );
+    maximizechat()
+  }  , 1000 );
 	
 }

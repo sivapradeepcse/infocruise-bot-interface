@@ -1,18 +1,177 @@
-#chat,#chat:after,.chatbox{transition:all .4s ease-in-out}
-#chat,#close-chat,.minim-button,.maxi-button,.chat-text{font-weight:700;cursor:pointer;font-family:Arial,sans-serif;text-align:center;height:20px;line-height:20px}
-#chat,#close-chat,.chatbox{border:1px solid #A8A8A8}
-#chat:after,#chat:before{position:absolute;border-style:solid;content:""}
-.chatbox{position:fixed;bottom:0;right:50px;margin:0 0 -1500px;background:#fff;border-bottom:none;padding:28px 10px 10px;z-index:100000}
-#close-chat{position:absolute;top:2px;right:2px;font-size:24px;border:1px solid #dedede;width:20px;background:#fefefe;z-index:2}
-#minim-chat,#maxi-chat{position:absolute;top:0;left:0;width:100%;height:20px;line-height:20px;cursor:pointer;z-index:1}
-.minim-button{position:absolute;top:2px;right:6px;font-size:24px;border:1px solid #dedede;width:20px;background:#fefefe}
-.maxi-button{position:absolute;top:2px;right:6px;font-size:24px;border:1px solid #dedede;width:20px;background:#fefefe;}
-.chat-text{position:absolute;top:5px;left:10px;font-size:16px;}
-#chat{width:40px;border-radius:3px;padding:2px 8px;font-size:12px;background:#fff;-webkit-transform:translateZ(0);transform:translateZ(0)}
-#chat:before{border-width:10px 11px 0 0;border-color:#A8A8A8 transparent transparent;left:7px;bottom:-10px}
-#chat:after{border-width:9px 8px 0 0;border-color:#fff transparent transparent;left:8px;bottom:-8px}
-#chat:hover{background:#ddd;-webkit-animation-name:hvr-pulse-grow;animation-name:hvr-pulse-grow;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate}
-#chat:hover:after{border-color:#ddd transparent transparent!important}
-#outer{width:400px;height:530px;overflow: hidden;margin:auto;padding:0;}
-#inner{width:400px;height: 530px;overflow:hidden;margin:auto;padding:0;border:0;}
-#ifr{border:3px; margin:0; padding: 0;}
+body{font-family: 'Roboto', sans-serif;}
+		#messages { list-style-type: none; margin: 0; padding: 0; }
+		#messages li.customer-error { color: red; }
+		input:focus{outline: none;}        
+		body
+		{
+			background-image:url("http://www.aussiemegamall.com/wp-content/uploads/2017/11/Aqua-background.jpg");
+			background-repeat:no-repeat;
+		}
+		#win::-webkit-scrollbar-track
+		{
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			background-color: #F5F5F5;
+		}
+
+		#win::-webkit-scrollbar
+		{
+			width: 6px;
+			background-color: #F5F5F5;
+		}
+
+		#win::-webkit-scrollbar-thumb
+		{
+			background-color: #eee;
+		}
+		#win
+		{
+			overflow:scroll;
+			overflow-x: hidden;
+			width:360px;
+			height:390px;
+			border-bottom: 1px solid black;
+			border-bottom-color:rgb(189, 199, 216);
+			border-top: 1px solid black;
+			border-top-color:rgb(189, 199, 216);
+			padding-top:10px;
+	 
+		}
+		#agent
+		{
+			width:365px;
+			height:510px;
+			border: 1px solid #FFF;
+			border-color:rgb(189, 199, 216);
+			border-radius: 15px;
+			border-bottom-color:rgba(0, 0, 0, 0.1);
+			border-bottom-style:solid;
+			border-bottom-width:1.325px;
+			box-shadow: 5px 2px 5px 8px rgb(189, 199, 216);
+			z-index:100000;
+			background-color:#fff;
+			position:absolute;
+			bottom:40px;
+			right:50px;
+			
+		  
+		}
+		#header
+		{
+			width:360px;
+			height:50px;
+		}
+		#inp,#m
+		{
+			width:330px;
+			height:50px;
+			
+		}
+		.text
+		{
+			width:75%;
+			float:right;
+		}
+		.text-l
+		{
+			width:75%;
+			float:left;
+		}        
+		input
+		{
+			background-color: #fff;
+			border: 0px solid;
+			height: 50px;;
+			width: 30px;
+			color: #000;
+			float:left;
+			z-index:100000;
+			font-size:15px;
+		}
+		.custmsg
+		{
+
+			padding-top:5px;
+			background-color: rgb(0, 132, 255);
+			border-bottom-left-radius: 1.3em;
+			border-top-left-radius: 1.3em;
+			color: #fff;
+			float: right;
+			clear: both;
+			display: block;
+			font-size: 12pt;
+			line-height: 15pt;
+			margin: 1pt 0;
+			max-width: 90%;
+			padding: 6pt 9pt;
+			font-size:13px;
+
+		}
+		.botmsg
+		{
+			padding-top:5px;
+			background-color: #eee;
+			border-bottom-right-radius: 1.3em;
+			border-top-right-radius: 1.3em;
+			color: #000;
+			float: left;
+			clear: both;
+			display: block;
+			font-size: 12pt;
+			line-height: 15pt;
+			margin: 1pt 0;
+			max-width: 90%;
+			padding: 6pt 9pt;
+			font-size:13px;
+		}
+		.header
+		{
+			align-items: center;
+			border-bottom: 1pt solid rgba(0, 0, 0, .1);
+			display: flex;
+			flex-basis: 10%;
+			justify-content: space-between;
+			max-height: 48pt;
+			min-height: 36pt;
+			text-align: center;
+			cursor:pointer;
+		}
+		.bot-title
+		{
+			
+			color:#1d2129;
+			
+			padding-right:105px;
+		}
+		.min-button
+		{
+			margin-left:5pt;
+			width:50px;
+			cursor:pointer;
+		}
+		.min-button>img
+		{
+			
+			width:25px;
+			height:25px;
+			background-color: rgba(0, 0, 0, .1);
+			border-radius: 50%;
+		}
+		#messenger-img
+		{
+			border-radius:60%;
+			background-color: #fff;
+			height:70px;
+			width:70px;
+			cursor:pointer;
+			position:absolute;
+			bottom:30px;
+			right:40px;
+			box-shadow: 3px 1px rgb(189, 199, 216);
+		}
+		#messenger-img>img
+		{
+			padding-top:10px;
+			padding-left:10px;
+			width:50px;
+			height:50px;
+		}
