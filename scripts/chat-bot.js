@@ -13,7 +13,7 @@
 	var l="<div id='messenger-img' onclick='maximizechat()'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Facebook_Messenger_logo.svg/2000px-Facebook_Messenger_logo.svg.png'></div>";
 	$("body").append(a);
 	$("#agent").append(b);
-	$("#header").append(c);
+	$("#botheader").append(c);
 	$("#min-button").append(e);
 	$("#botheader").append(d);
 	$("#disp-btn").append(f);
