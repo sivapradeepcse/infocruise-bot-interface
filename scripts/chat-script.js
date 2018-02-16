@@ -7,12 +7,8 @@ function minimizechat()
 }
 function maximizechat()
 {
-	$( "#messenger-img" ).toggle( "bounce", { times: 4 }, "slow" );
-setTimeout( function(){ 
+	
     document.getElementById("agent").style.display="block";
-
-
-	document.getElementById("messenger-img").style.display="none";
-  }  , 2000 );
+document.getElementById("messenger-img").style.display="none";
 	
 }
