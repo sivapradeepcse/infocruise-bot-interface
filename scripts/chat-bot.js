@@ -6,7 +6,7 @@
 					var f="<span class='min-button' id='min-button' onclick='minimizechat()'><img src='https://cdn3.iconfinder.com/data/icons/line/36/subtract-512.png'></span>";
 				var d="</div>";
 			var g="</div>";
-			var h="<div class='bot-title' id='bot-title'>InfoBot</div>";
+			var h="<div class='bot-title' id='bot-title'>INFOBOT</div>";
 		var i="</div>";
 		var j="<iframe src='https://srgs.herokuapp.com/web' scrolling='no' frameborder='0' width='365' height='450' id='ifr'></iframe>";
 	var k="</div>";
