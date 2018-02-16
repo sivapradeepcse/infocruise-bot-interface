@@ -1,6 +1,6 @@
  $(document).ready(function() {
 	var a="<div id='agent'>";
-		var b="<div id='header' class='header' onclick='minimizechat()'>";
+		var b="<div id='botheader' class='botheader' onclick='minimizechat()'>";
 			var c="<div class='min-button' id='min-button' align='left'>";
 				var e="<div class='disp-btn' id='disp-btn'>";
 					var f="<span class='min-button' id='min-button' onclick='minimizechat()'><img src='https://cdn3.iconfinder.com/data/icons/line/36/subtract-512.png'></span>";
