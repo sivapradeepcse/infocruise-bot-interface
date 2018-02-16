@@ -4,6 +4,6 @@ document.getElementById("agent").style.display="none";
 document.getElementById("messenger-img").style.display="none";
 	setTimeout( function(){ 
     maximizechat()
-  }  , 500 );
+  }  , 7000 );
 	
 }
