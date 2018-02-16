@@ -30,6 +30,7 @@ body{font-family: 'Roboto', sans-serif;}
 			border-top: 1px solid black;
 			border-top-color:rgb(189, 199, 216);
 			padding-top:10px;
+			
 	 
 		}
 		#agent
@@ -42,7 +43,7 @@ body{font-family: 'Roboto', sans-serif;}
 			border-bottom-color:rgba(0, 0, 0, 0.1);
 			border-bottom-style:solid;
 			border-bottom-width:1.325px;
-			box-shadow: 5px 2px 5px 8px rgb(189, 199, 216);
+			box-shadow: 5px 2px 5px 2px #f2f794;
 			z-index:100000;
 			background-color:#fff;
 			position:absolute;
@@ -56,7 +57,7 @@ body{font-family: 'Roboto', sans-serif;}
 			
 			width:366px;
 			height:50px;
-			background-color:#3b5998;
+			background-color:#b6d17a;
 			border-top-left-radius: 15px;
 			border-top-right-radius:15px;
 		}
@@ -66,16 +67,7 @@ body{font-family: 'Roboto', sans-serif;}
 			height:50px;
 			
 		}
-		.text
-		{
-			width:75%;
-			float:right;
-		}
-		.text-l
-		{
-			width:75%;
-			float:left;
-		}        
+		     
 		input
 		{
 			background-color: #fff;
@@ -104,6 +96,7 @@ body{font-family: 'Roboto', sans-serif;}
 			max-width: 90%;
 			padding: 6pt 9pt;
 			font-size:13px;
+			font-family: 'Nanum Pen Script', cursive;
 
 		}
 		.botmsg
@@ -122,6 +115,7 @@ body{font-family: 'Roboto', sans-serif;}
 			max-width: 90%;
 			padding: 6pt 9pt;
 			font-size:13px;
+			
 		}
 		.botheader
 		{
@@ -137,10 +131,14 @@ body{font-family: 'Roboto', sans-serif;}
 		}
 		.bot-title
 		{
-			
+			font-family: 'Indie Flower', cursive;
 			color:white;
 			font-size:1.5em;
-			padding-right:45%;
+			padding-right:33%;
+		}
+		.version_num
+		{
+			font-size:10px;
 		}
 		.min-button
 		{
