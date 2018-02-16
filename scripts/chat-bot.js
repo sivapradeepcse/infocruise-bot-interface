@@ -6,9 +6,9 @@
 					var f="<span class='min-button' id='min-button' onclick='minimizechat()'><img src='https://cdn3.iconfinder.com/data/icons/line/36/subtract-512.png'></span>";
 				var d="</div>";
 			var g="</div>";
-			var h="<div class='bot-title' id='bot-title'>Infocruise Chat Bot</div>";
+			var h="<div class='bot-title' id='bot-title'>InfoBot</div>";
 		var i="</div>";
-		var j="<iframe src='127.0.0.1:3000' scrolling='no' frameborder='10' width='360px' height='390px' border='10' id='ifr'></iframe>";
+		var j="<iframe src='http://127.0.0.1:3000/' scrolling='no' frameborder='0' width='365' height='460' id='ifr'></iframe>";
 	var k="</div>";
 	var l="<div id='messenger-img' onclick='maximizechat()'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Facebook_Messenger_logo.svg/2000px-Facebook_Messenger_logo.svg.png'></div>";
 	$("body").append(a);
