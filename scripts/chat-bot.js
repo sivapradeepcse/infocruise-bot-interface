@@ -15,10 +15,10 @@
 	$("#agent").append(b);
 	$("#header").append(c);
 	$("#min-button").append(e);
-	$("#header").append(d);
+	$("#botheader").append(d);
 	$("#disp-btn").append(f);
-	$("#header").append(g);
-	$("#header").append(h);
+	$("#botheader").append(g);
+	$("#botheader").append(h);
 	$("#agent").append(i);
 	$("#agent").append(j);
 	$("#body").append(k);
